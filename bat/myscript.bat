@@ -2,7 +2,7 @@
 setlocal enabledelayedexpansion
 
 :: Configure script directory (modify to your actual path)
-set "SCRIPT_DIR=D:\Desktop\script"
+set "SCRIPT_DIR=E:\workspace\class_101\pytools\scripts"
 
 if "%1"=="list" (
     echo Available scripts in [%SCRIPT_DIR%]:
