@@ -38,3 +38,5 @@ if __name__ == "__main__":
     args = parser.parse_args()
     
     rename_files(args.dir, args.texts, args.recursive, args.dry_run)
+    # 使用示例
+    # python rptext.py . '删除'
