@@ -1,2 +1,11 @@
 @echo off
-python "%~dp0..\cpr7z.py" %*
+SET "script_path=%~dp0..\scripts\cpr7z.py"
+
+if not exist "%script_path%" (
+    echo [ERROR] Missing script: %script_path%
+    pause
+    exit /b 1
+)
+
+python "%script_path%" %*
+if %errorlevel% neq 0 pause
